@@ -15,3 +15,6 @@ other = "Primero"
 
 [pagination_last]
 other = "Último"
+
+[404_subtitle]
+other = "¡La página que buscas no existe!"
