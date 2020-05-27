@@ -16,8 +16,7 @@
       {{ end }}
     </title>
 
-    {{ $style := resources.Get "bulmin.sass" | resources.ExecuteAsTemplate "main.scss" . | resources.ToCSS | resources.Minify }}
-    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/yeti/bulmaswatch.min.css">
 
     {{ partial "custom_header.html" . }}
 
