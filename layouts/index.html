@@ -2,10 +2,12 @@
 
   {{ $mainSection := .Site.Params.mainSections }}
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" $mainSection) }}
-  {{ range $paginator.Pages }}
-
-    {{ .Render "li" }}
-
+  {{ if gt (len $paginator.Pages) 0 }}
+    {{ range $paginator.Pages }}
+      {{ .Render "li" }}
+    {{ end }}
+  {{ else }}
+    {{ .Render "no_posts" }}
   {{ end }}
 
   {{ partial "pagination.html" $paginator }}

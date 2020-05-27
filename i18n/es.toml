@@ -18,3 +18,9 @@ other = "Último"
 
 [404_subtitle]
 other = "¡La página que buscas no existe!"
+
+[no_posts_title]
+other = "Ay, parece que no hay nada entradas en este blog"
+
+[no_posts_subtitle]
+other = "Regresa más tarde, yo supongo"
