@@ -17,31 +17,50 @@
     </title>
 
     <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/yeti/bulmaswatch.min.css">
+    <style>
+      .card {
+        margin: 2rem 0px;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      #wrapper {
+        flex: 1;
+      }
+
+      .post-content {
+        margin-top: 2rem;
+      }
+    </style>
 
     {{ partial "custom_header.html" . }}
 
   </head>
   <body>
+    <div id="wrapper">
 
-    <!-- Navbar -->
-    {{ partial "navbar.html" . }}
+      <!-- Navbar -->
+      {{ partial "navbar.html" . }}
 
-    <!-- Main Content Section -->
-    <section class="section">
-      <div class="columns is-centered">
-        <div class="column is-10-tablet is-8-desktop is-6-widescreen">
-          {{ block "main" . }}
-          {{ end }}
+      <!-- Main Content Section -->
+      <section class="section">
+        <div class="columns is-centered">
+          <div class="column is-10-tablet is-8-desktop is-6-widescreen">
+            {{ block "main" . }}
+            {{ end }}
+          </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
     <!-- Footer -->
     <footer class="footer">
       {{ partial "footer.html" . }}
     </footer>
 
     {{ partial "custom_footer.html" . }}
-
   </body>
 </html>
