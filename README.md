@@ -9,6 +9,7 @@ Differences in this fork:
 - Fixed footer at bottom of the page
 - l18n for the 404 page
 - Uses [bulmaswatch](https://jenil.github.io/bulmaswatch/)'s Yeti theme, removing the vendored Bulma
+- Use Hugo's internal templates to add markup for OpenGraph and Twitter Cards
 
 ## License
 
